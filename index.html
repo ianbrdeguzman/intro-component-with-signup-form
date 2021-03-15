@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./app.js" defer></script>
+        <title>Frontend Mentor | Intro component with sign up form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Learn to code by watching others</h1>
+            <p>
+                See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.
+            </p>
+        </header>
+        <main>
+            <div class="main-header">
+                <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+            </div>
+            <form>
+                <label for="fname">
+                    <input
+                        class="input"
+                        name="fname"
+                        type="text"
+                        id="fname"
+                        placeholder="First Name"
+                    />
+                    <span class="error fname">First Name cannot be empty</span>
+                </label>
+                <label for="lname">
+                    <input
+                        class="input"
+                        name="lname"
+                        type="text"
+                        id="lname"
+                        placeholder="Last Name"
+                    />
+                    <span class="error lname">Last Name cannot be empty</span>
+                </label>
+                <label for="email">
+                    <input
+                        class="input"
+                        name="email"
+                        type="text"
+                        id="email"
+                        placeholder="Email Address"
+                    />
+                    <span class="error email"
+                        >Looks like this is not an email</span
+                    >
+                </label>
+                <label for="password">
+                    <input
+                        class="input"
+                        name="passw"
+                        type="password"
+                        id="passw"
+                        placeholder="Password"
+                    />
+                    <span class="error passw">Password cannot be empty</span>
+                </label>
+                <button type="submit">Claim your free trial</button>
+                <p>
+                    By clicking the button, you are agreeing to our
+                    <span>Terms and Services</span>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <p class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">ianbrdeguzman</a>.
+            </p>
+        </footer>
+    </body>
+</html>
