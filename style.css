@@ -16,6 +16,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 header {
     width: 90vw;
@@ -139,6 +142,7 @@ main form p span {
         flex-direction: row;
         align-items: center;
         padding: 0 10rem;
+        background-image: url(./images/bg-intro-desktop.png);
     }
     header {
         text-align: left;
