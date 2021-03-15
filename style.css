@@ -53,6 +53,10 @@ main form {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.1);
 }
+main form label {
+    display: block;
+    position: relative;
+}
 main form label input {
     font-family: inherit;
     width: 100%;
@@ -77,6 +81,16 @@ main form label span {
     margin-bottom: 0.5rem;
 }
 main form label span.active {
+    display: block;
+}
+main form label i {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-65%);
+}
+main form label i.active {
     display: block;
 }
 main form button {

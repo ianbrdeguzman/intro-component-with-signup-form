@@ -40,6 +40,7 @@ class Form {
                     if (error.classList.contains(input.id)) {
                         error.innerHTML = `${input.placeholder} cannot be empty`;
                         error.classList.add('active');
+                        error.nextElementSibling.classList.add('active');
                     }
                 });
             });
@@ -68,8 +69,14 @@ class Form {
         this.DOMElements.fname.addEventListener('input', () => {
             if (this.DOMElements.fname.value.match(this.regEx.fname)) {
                 this.searchError('fname').classList.remove('active');
+                this.searchError('fname').nextElementSibling.classList.remove(
+                    'active'
+                );
             } else {
                 this.searchError('fname').classList.add('active');
+                this.searchError('fname').nextElementSibling.classList.add(
+                    'active'
+                );
                 this.searchError('fname').innerHTML = this.errorMessages.fname;
             }
         });
@@ -81,8 +88,14 @@ class Form {
         this.DOMElements.lname.addEventListener('input', () => {
             if (this.DOMElements.lname.value.match(this.regEx.lname)) {
                 this.searchError('lname').classList.remove('active');
+                this.searchError('lname').nextElementSibling.classList.remove(
+                    'active'
+                );
             } else {
                 this.searchError('lname').classList.add('active');
+                this.searchError('lname').nextElementSibling.classList.add(
+                    'active'
+                );
                 this.searchError('lname').innerHTML = this.errorMessages.lname;
             }
         });
@@ -94,9 +107,14 @@ class Form {
         this.DOMElements.email.addEventListener('input', () => {
             if (this.DOMElements.email.value.match(this.regEx.email)) {
                 this.searchError('email').classList.remove('active');
-                return true;
+                this.searchError('email').nextElementSibling.classList.remove(
+                    'active'
+                );
             } else {
                 this.searchError('email').classList.add('active');
+                this.searchError('email').nextElementSibling.classList.add(
+                    'active'
+                );
                 this.searchError('email').innerHTML = this.errorMessages.email;
             }
         });
@@ -108,9 +126,14 @@ class Form {
         this.DOMElements.passw.addEventListener('input', () => {
             if (this.DOMElements.passw.value.match(this.regEx.passw)) {
                 this.searchError('passw').classList.remove('active');
-                return true;
+                this.searchError('passw').nextElementSibling.classList.remove(
+                    'active'
+                );
             } else {
                 this.searchError('passw').classList.add('active');
+                this.searchError('passw').nextElementSibling.classList.add(
+                    'active'
+                );
                 this.searchError('passw').innerHTML = this.errorMessages.passw;
             }
         });
