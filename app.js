@@ -18,7 +18,7 @@ class Form {
         this.errorMessages = {
             fname: 'Enter a correct name',
             lname: 'Enter a correct last name',
-            email: 'Enter a correct email address',
+            email: 'Looks like this is not an email',
             passw: 'Password length between 8 - 20 characters',
         };
     }
